@@ -12,12 +12,14 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
+
 class HBNBCommand(cmd.Cmd):
     """
     Command interpreter interface
     """
     prompt = "(hbnb) "
-    classes = {"BaseModel", "User", "Place", "State", "City", "Amenity", "Review"}
+    classes = {"BaseModel", "User", "Place",
+               "State", "City", "Amenity", "Review"}
 
     def do_EOF(self, line):
         """Exit when Ctrl-D is entered"""
